@@ -1,3 +1,14 @@
+//STYLESHEET NOTES
+  //FONTS -  WE DON'T HAVE THE FONTS SET UP CORRECTLY. THEY ARE DISPLAYING ON YOUR COMPUTER BECAUSE YOU HAVE THEM INSTALLED, BUT MOST PEOPLE DON'T HAVE MINION PRO, SO WE NEED EMBED THIS CORRRECTLY. I WILL REVIEW THIS WITH YOU.
+  //OVERALL NOT TOO BAD. IT WOULD BE HELPFUL IF YOU PUT A TABLE OF CONTENTS AT THE TOP OF THIS PAGE TO EXPLAIN WHERE ANOTHER DEVELOPER MAY FIND THINGS IN THIS DOCUMENT.
+
+  //EXAMPLE:
+    //1. BASE STYLES
+    //2. FONTS STYLES
+    //3. NAVIGATION
+    //4. MAIN CONTAINER
+    //5. FOOTERS
+
 body{margin:0;}
 
 /*FONT*/
@@ -10,14 +21,14 @@ h1, h2, h4, h5 {
 h1 {
   font-size: 72px;
   color: #ffffff;
-  text-align: center;
+  text-align: center; //ARE ALL YOUR H1s GOING TO BE CENTERED?
   line-height: 95%;
 }
 
 h2 {
   font-size: 20px;
   color: #ffffff;
-  text-align: center;
+  text-align: center; //ARE ALL YOUR H2s GOING TO BE CENTERED? MAYBE CREATED A CLASS IS CALLED TEXT-CENTERED AND JUST APPLY IT TO THE ELEMENTS YOU WANT CENTERED
 }
 
 h4 {
@@ -38,7 +49,7 @@ p {
 
 /*Base*/
 
-.margin-top-100{margin-top:100px !important;}
+.margin-top-100{margin-top:100px !important;} // I DON'T THINK WE NEED THESE IMPORTANT TAGS. I CAN'T REMEMBER WHY I PUT THEM THERE BUT NOT SURE THEY ARE NEEDED
 .margin-bottom-150{margin-bottom:150px !important;}
 .padding-bottom-20{margin-bottom: 20px !important;}
 .padding-left-10{margin-left: 10px !important;}
@@ -159,7 +170,7 @@ p {
   -webkit-background-size:cover;
   -moz-background-size:cover;
   padding-top: 25px;
-}
+} //WE SHOLULD FIX THIS NAME AND MAKE IT A BIT MORE SPECIFIC TO WHAT IT IS ACUTALLY DOING
 
 .profile {
   display: block;
