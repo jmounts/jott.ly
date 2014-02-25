@@ -7,18 +7,17 @@
   </head>  
   <body style="margin:0;">
     <header class="header">
-      <div class="container"><!-- WE CAN REMOVE THIS DIV TAG AND PLACE THE CONTAINER CLASS IN THE NAV TAG. -->
-        <nav>
-          <a href="#" class="navigation">Home</a> <!-- WE CAN GIVE THE HOME NAV LINK A PATH OF / FOR THE ROOT PAGE OR THE INDEX -->
-          <a href="#" class="navigation">About</a>
-          <a href="#" class="navigation">Contact</a>
-        </nav>
-      </div>
+    <!-- WE CAN REMOVE THIS DIV TAG AND PLACE THE CONTAINER CLASS IN THE NAV TAG. -->
+      <nav class="container">
+        <a href="#/home" class="navigation">Home</a> <!-- WE CAN GIVE THE HOME NAV LINK A PATH OF / FOR THE ROOT PAGE OR THE INDEX -->
+        <a href="#/about" class="navigation">About</a>
+        <a href="#/contact" class="navigation">Contact</a>
+      </nav>
       <div><!-- CHECK YOUR IMAGE PATH HERE -->
-        <img class="logo" src="./images/logo.png" alt="Jott.ly">
-        <h1>An easier way to <br> write &amp; collaborate</h1>
-        <h2 id="subhead">Edit, post and share content with your peers in a simple way.</h2><!-- LET'S NOT USE IDs. WE COULD USE THIS SELECTOR AGAIN -->
-        <a href="http://www.jott.ly.com/try_free" class="btn btn-green">Free Download</a><!-- IF THIS LINKS TO A PAGE ON YOUR SITE ALL YOU NEED TO DO IN THE HREF IS THE PAGE WITH THE EXTENSION .HTML. SO IF TRY_FREE IS THE HTML PAGE, IT WOULD BE /TRY_FREE.HTML -->
+        <img class="logo" src="images/logo.png" alt="Jott.ly">
+        <h1 class="text-centered">An easier way to <br> write &amp; collaborate</h1>
+        <h2 class="subhead text-centered">Edit, post and share content with your peers in a simple way.</h2><!-- LET'S NOT USE IDs. WE COULD USE THIS SELECTOR AGAIN -->
+        <a href="#/try_free.html" class="btn btn-green">Free Download</a><!-- IF THIS LINKS TO A PAGE ON YOUR SITE ALL YOU NEED TO DO IN THE HREF IS THE PAGE WITH THE EXTENSION .HTML. SO IF TRY_FREE IS THE HTML PAGE, IT WOULD BE /TRY_FREE.HTML -->
       </div>
     </header>
     <div class="body-wrap">
@@ -43,7 +42,7 @@
         </div> 
       </section>
     </div>
-    <section class="green"><!-- WE SHOULD BE MORE SPECIFIC WITH THIS CLASS. SOMETHING GREEN-BG OR GREEN-BACKGROUND -->
+    <section class="green-bg"><!-- WE SHOULD BE MORE SPECIFIC WITH THIS CLASS. SOMETHING GREEN-BG OR GREEN-BACKGROUND -->
       <div class="container">
         <div class="five columns"> 
           <img src="images/joe.png" class="profile" alt="Joe">
@@ -63,17 +62,16 @@
       </div>
     </section>
     <footer>
-      <h4 id="get_started">Get Started Today!</h4>
+      <h4 id="get-started">Get Started Today!</h4>
       <p id="why_not">Why not? It's free to try. Actually, it's free forever. You never have to pay.</p>
-      <a href="http://www.jott.ly.com/try_free" class="btn btn-green">Free Download</a>
-      <img class="logo_bottom" src="./images/logo.png" alt="Jott.ly"><!-- CHECK YOUR PATH HERE -->
-      <div class="container"><!-- WE CAN REMOVE THIS DIV TAG AND PLACE THE CONTAINER CLASS IN THE NAV TAG BELOW. THIS WILL KILL A LINE OF UN NEEDED CODE -->
-        <nav>
-            <a href="#" class="bottom_nav">Home</a>
-            <a href="#" class="bottom_nav">About</a>
-            <a href="#" class="bottom_nav">Contact</a>
-        </nav>
-      </div>
+      <a href="#/try_free" class="btn btn-green">Free Download</a>
+      <img class="logo_bottom" src="images/logo.png" alt="Jott.ly"><!-- CHECK YOUR PATH HERE -->
+      <!-- WE CAN REMOVE THIS DIV TAG AND PLACE THE CONTAINER CLASS IN THE NAV TAG BELOW. THIS WILL KILL A LINE OF UN NEEDED CODE -->
+      <nav class="container">
+          <a href="#/home" class="bottom_nav">Home</a>
+          <a href="#/about" class="bottom_nav">About</a>
+          <a href="#/contact" class="bottom_nav">Contact</a>
+      </nav>
     </footer>
   </body>
 </html>
