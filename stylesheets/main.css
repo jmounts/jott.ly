@@ -1,0 +1,266 @@
+//STYLESHEET NOTES
+  //FONTS -  WE DON'T HAVE THE FONTS SET UP CORRECTLY. THEY ARE DISPLAYING ON YOUR COMPUTER BECAUSE YOU HAVE THEM INSTALLED, BUT MOST PEOPLE DON'T HAVE MINION PRO, SO WE NEED EMBED THIS CORRRECTLY. I WILL REVIEW THIS WITH YOU.
+  //OVERALL NOT TOO BAD. IT WOULD BE HELPFUL IF YOU PUT A TABLE OF CONTENTS AT THE TOP OF THIS PAGE TO EXPLAIN WHERE ANOTHER DEVELOPER MAY FIND THINGS IN THIS DOCUMENT.
+
+  //EXAMPLE:
+    //1. BASE STYLES
+    //2. FONTS STYLES
+    //3. NAVIGATION
+    //4. MAIN CONTAINER
+    //5. FOOTERS
+    //6. MEDIA QUIRIES
+
+body{margin:0 !important; padding:0;}
+
+
+
+/*BASE*/
+
+.margin-top-50{margin-top: 50px;}
+.margin-top-100{margin-top:100px;} // I DON'T THINK WE NEED THESE IMPORTANT TAGS. I CAN'T REMEMBER WHY I PUT THEM THERE BUT NOT SURE THEY ARE NEEDED
+.margin-bottom-150{margin-bottom:150px;}
+.padding-bottom-20{margin-bottom: 20px;}
+.padding-left-10{margin-left: 10px;}
+.padding-top-20{margin-top: 20px;}
+
+
+
+/*FONT*/
+
+h1, h2, h4, h5 {
+  font-family: myriad pro, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 72px;
+  color: #ffffff; //ARE ALL YOUR H1s GOING TO BE CENTERED?
+  line-height: 95%;
+}
+
+h2 {
+  font-size: 20px;
+  color: #ffffff; //ARE ALL YOUR H2s GOING TO BE CENTERED? MAYBE CREATED A CLASS IS CALLED TEXT-CENTERED AND JUST APPLY IT TO THE ELEMENTS YOU WANT CENTERED
+}
+
+h4 {
+  color: #7ac142;
+  font-size: 24px;
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+p {
+  font-family: minion pro, Ashbury, serif;
+  font-size: 14px;
+}
+
+.text-centered: {
+  text-align: center;
+}
+
+
+
+/*NAVIGATION*/
+
+.navigation {
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: myriad pro, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  float: right;
+  color: #ffffff;
+  opacity: .5;
+  margin: 30px 10px 0;
+  text-decoration:none;
+  text-align: right;
+}
+
+.navigation:hover {
+  opacity: 1;
+}
+
+.bottom_nav {
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: myriad pro, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  opacity: .5;
+  text-decoration:none;
+  margin: 20px 10px 10px;
+}
+
+.bottom_nav:hover{
+  opacity: 1;
+}
+
+.btn {
+  font-family: myriad pro; Helvetica; sans-serif;
+  border-radius: 10px;
+  background-color: #9cad9d;
+  padding: 15px 30px;
+  margin:20px auto;
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 0 10px rgba(0,0,0,0.5);
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn.btn-green{
+  -webkit-transition: background-image 0.3s ease;
+  -moz-transition: background-image 0.3s ease;
+  transition: background-image 0.3s ease;
+  background-image: -webkit-gradient(
+  linear, left bottom, left top, color-stop(0, #A6D580), color-stop(1, #79C142));
+  background-image: -o-linear-gradient(top, #A6D580 0%, #79C142 100%);
+  background-image: -moz-linear-gradient(top, #A6D580 0%, #79C142 100%);
+  background-image: -webkit-linear-gradient(top, #A6D580 0%, #79C142 100%);
+  background-image: -ms-linear-gradient(top, #A6D580 0%, #79C142 100%);
+  background-image: linear-gradient(to top, #A6D580 0%, #79C142 100%);
+}
+
+.btn.btn-green:hover{
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #A6D580),
+  color-stop(1, #79C142)
+);
+  background-image: -o-linear-gradient(bottom, #A6D580 0%, #79C142 100%);
+  background-image: -moz-linear-gradient(bottom, #A6D580 0%, #79C142 100%);
+  background-image: -webkit-linear-gradient(bottom, #A6D580 0%, #79C142 100%);
+  background-image: -ms-linear-gradient(bottom, #A6D580 0%, #79C142 100%);
+  background-image: linear-gradient(to bottom, #A6D580 0%, #79C142 100%);
+}
+
+
+
+/*MAIN CONTAINER*/
+
+.header {
+  background: #9cad9d url(../images/main-bg.jpg) no-repeat top left;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+  height:600px;
+  margin: 0;
+  position:fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index:-1;
+}
+
+.subhead {
+  margin-top: -35px;
+}
+
+.logo {
+  opacity: .5;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+}
+
+.body-wrap{
+  background-color: #fff;
+  width: 100%;
+}
+
+.img-offset{
+  margin-top: 700px;
+  padding-top: 40px;
+}
+
+.app-img {
+  margin-bottom: -4px;
+}
+
+.quote {
+  color: #ffffff;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: .75;
+  line-height: 16px;
+}
+
+.quote-name {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.green-bg {
+  background: #9cad9d;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  padding-top: 25px;
+} 
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+  background: #273792;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#get-started {
+  padding-top:25px;
+  margin:0;
+}
+
+#why_not {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.logo_bottom {
+  opacity: .5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+
+
+/* Media Quries */
+
+@media only screen and (max-width: 767px) {
+
+  .app-img{
+    text-align: center;
+    width: 90%;
+  }  
+
+  h1{
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
